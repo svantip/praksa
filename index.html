@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=yes" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="./css/global.css" />
+    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="./css/PortfolioST.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sticky-js@1.3.0/dist/sticky.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+
+    <style>
+      html {
+        height: 100%;
+      }
+      .zoom-out {
+        transform: scale(0.9);
+        transform-origin: top left;
+        width: 111.11%; /* 100% / 0.9 */
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.classList.add("zoom-out");
+      });
+    </script>
+  </head>
+
+  <body class="flex-column">
+    <main class="portfolio-st main">
+      <section class="section1" id="intro">
+        <div class="flex_col">
+          <div class="flex_row">
+            <img class="image4" src="./assets/tensorflow_logo.png" alt="alt text" onclick="window.open(`#intro`, `_self`)" />
+            <div class="flex_row1">
+              <a class="subtitle2" href="#about" target="_self">About</a><a class="subtitle2" href="#portfolio">Projects</a
+              ><a class="subtitle2" href="#contact">Contact</a>
+            </div>
+            <div class="content_box">
+              <input class="highlight" id="search" placeholder="Search" />
+              <img class="image3" src="./assets/open_source_contribution_graphic.png" alt="alt text" onclick="search()" />
+            </div>
+          </div>
+          <div class="group">
+            <img class="decorator" data-aos="fade-left" data-aos-duration="1200" src="assets/cover.png" alt="alt text" onclick="search()" />
+            <div class="flex_row2">
+              <div class="flex_col1">
+                <h1 class="hero_title2_box" data-aos="fade-right" data-aos-duration="1200">
+                  <span class="hero_title2">
+                    <span class="hero_title2_span0">Hi I’m<br />Svan </span><span class="hero_title2_span1">Tipurić</span>
+                  </span>
+                </h1>
+                <h1 class="big_title" data-aos="fade-left" data-aos-duration="1200">Mobile / Web developer</h1>
+                <button class="btn" onclick="downloadFile()" data-aos="zoom-in-right" data-aos-easing="ease-in-out">Download CV</button>
+              </div>
+              <div class="flex_col2" data-aos="zoom-in-left" data-aos-duration="1200">
+                <div class="rect6"></div>
+                <img
+                  class="image6"
+                  id="btnFacebook"
+                  src="./assets/facebook_f_logo.png"
+                  alt="alt text"
+                  onclick="window.open(`https://www.facebook.com/`, `_self`)"
+                /><img
+                  class="image7"
+                  id="btnGithub"
+                  src="./assets/twitter_bird_logo.png"
+                  alt="alt text"
+                  onclick="window.open(`https://github.com/svantip`, `_self`)"
+                /><img
+                  class="image5"
+                  id="btnWhatsapp"
+                  src="./assets/checkmark_in_circle_icon.png"
+                  alt="alt text"
+                  onclick="window.open(`https://whatpsapp.com`, `_self`)"
+                /><img
+                  class="image61"
+                  id="btnInstagram"
+                  src="./assets/instagram_camera_logo.png"
+                  alt="alt text"
+                  onclick="window.open(`https://instagram.com`, `_self`)"
+                /><img
+                  class="image8"
+                  id="btnMail"
+                  src="./assets/email_envelope_icon.png"
+                  alt="alt text"
+                  onclick="window.open(`https://gmail.com`, `_self`)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section2" id="about">
+        <div class="flex_col3">
+          <div class="flex_col4">
+            <h1 class="hero_title1" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="500">About</h1>
+            <div class="flex_row3">
+              <div class="rect61" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="500"></div>
+
+              <h2 class="medium_title1" data-aos="zoom-in-right" data-aos-easing="ease-in-out" data-aos-duration="500">
+                I am a third-year student at the Faculty of Informatics and Digital Technologies in Rijeka with a strong foundation in technology and
+                a passion for software development. I have experience with various programming languages and development tools, including Kotlin,
+                Flutter, Java, Python, C#, and C++. I am fluent in Croatian and proficient in English, with additional basic knowledge of Italian. My
+                work experience includes roles such as Porter at Hotel Eden and Pool Attendant at Hotel Amarin, where I developed a diverse skill set
+                and demonstrated my ability to work in collaborative environments. Additionally, I attended an additional course for PLSQL at IN2
+                company. I am eager to further immerse myself in cutting-edge technologies and contribute to dynamic team projects.
+              </h2>
+            </div>
+          </div>
+          <div class="flex_col5">
+            <h1 class="hero_title11" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="500">Skills</h1>
+            <div class="flex_row4">
+              <div class="rect7" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="500"></div>
+              <div class="flex_col6">
+                <div class="content_box1" data-aos="flip-down" data-aos-easing="ease-in-out" data-aos-duration="700" id="anchor2">
+                  <div class="flex_col7">
+                    <img class="image2" data-aos="zoom-in" data-aos-duration="700" src="./assets/python_language_logo.png" alt="alt text" />
+                    <h3 class="subtitle21">Python<br /></h3>
+                  </div>
+                </div>
+                <div class="content_box2" data-aos="flip-down" data-aos-easing="ease-in-out" data-aos-duration="700" data-aos-anchor="">
+                  <div class="flex_col8">
+                    <img
+                      class="image1"
+                      data-aos="zoom-in"
+                      data-aos-duration="700"
+                      data-aos-anchor=""
+                      src="./assets/ad82e515c6a8e28d8472c542310d5782.png"
+                      alt="alt text"
+                    />
+                    <h3 class="subtitle22">Node</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="flex_col9">
+                <div class="content_box21" data-aos="flip-down" data-aos-easing="ease-in-out" data-aos-duration="700">
+                  <div class="flex_col10">
+                    <img class="image1" data-aos="zoom-in" data-aos-duration="700" src="./assets/abstract_colorful_triangle_art.png" alt="alt text" />
+                    <h3 class="subtitle21">Kotlin</h3>
+                  </div>
+                </div>
+                <div class="content_box21" data-aos="flip-down" data-aos-easing="ease-in-out" data-aos-duration="700" data-aos-anchor="">
+                  <div class="flex_col11">
+                    <img class="image1" data-aos="zoom-in" data-aos-duration="700" src="./assets/is_null.png" alt="alt text" />
+                    <h3 class="subtitle21">React</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="flex_col9">
+                <div class="content_box21" data-aos="flip-down" data-aos-easing="ease-in-out" data-aos-duration="700">
+                  <div class="flex_col10">
+                    <img
+                      class="image1"
+                      data-aos="zoom-in"
+                      data-aos-duration="700"
+                      data-aos-anchor=""
+                      src="./assets/blue_hued_arrow_logo.png"
+                      alt="alt text"
+                    />
+                    <h3 class="subtitle21">Flutter</h3>
+                  </div>
+                </div>
+                <div class="content_box21" data-aos="flip-down" data-aos-easing="ease-in-out" data-aos-duration="700">
+                  <div class="flex_col11">
+                    <img class="image1" data-aos="zoom-in" data-aos-duration="700" src="./assets/django_framework_logo.png" alt="alt text" />
+                    <h3 class="subtitle21">Django</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="flex_col9">
+                <div class="content_box21" data-aos="flip-down" data-aos-easing="ease-in-out" data-aos-duration="700" data-aos-anchor="">
+                  <div class="flex_col12">
+                    <img
+                      class="image1"
+                      data-aos="zoom-in"
+                      data-aos-duration="700"
+                      src="./assets/javascript_logo_icon.png"
+                      alt="alt text"
+                      data-aos-anchor=""
+                    />
+                    <h3 class="subtitle21">Javascript</h3>
+                  </div>
+                </div>
+                <div class="content_box21" data-aos="flip-down" data-aos-easing="ease-in-out" data-aos-duration="700" data-aos-anchor="">
+                  <div class="flex_col11">
+                    <img
+                      class="image1"
+                      data-aos="zoom-in"
+                      data-aos-duration="700"
+                      src="./assets/bootstrap_logo_icon.png"
+                      alt="alt text"
+                      data-aos-anchor=""
+                    />
+                    <h3 class="subtitle21">Bootstrap</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section3" style="background-color: #2e2f33" id="portfolio">
+        <div class="flex_col13">
+          <h1 class="hero_title12" data-aos="fade-down" data-aos-easing="ease-in-out">Projects</h1>
+          <div class="flex_row5">
+            <div
+              class="content_box9"
+              style="--src: url(../assets/code_snippet_with_syntax_highlighting.png)"
+              data-aos="fade-left"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1000"
+            >
+              <div class="flex_col14">
+                <h1 class="big_title1">Apartment <br />Grand Soleil</h1>
+                <h3 class="subtitle">This is a website made for an apartment Grand Soileil using Bootstrap and PHP</h3>
+                <button class="btn1" onclick="window.open(`https://github.com/svantip/GrandSoleil`, '_blank')">Check it out</button>
+              </div>
+            </div>
+            <div
+              class="content_box9"
+              style="--src: url(../assets/coding_on_laptop_blurred_background.png)"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1000"
+            >
+              <div class="flex_col15">
+                <h1 class="big_title2">Python article scraper</h1>
+                <h3 class="subtitle1">Made in python using bs4 and newspaper3k. It scrapes articles and delivers data to an NLP model.</h3>
+                <button class="btn1" onclick="window.open(`https://github.com/svantip/N1Scraper`, '_blank')">Check it out</button>
+              </div>
+            </div>
+            <div
+              class="content_box9"
+              style="--src: url(../assets/programming_code_closeup_dark_theme.png)"
+              data-aos="fade-right"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1000"
+            >
+              <div class="flex_col16">
+                <h1 class="big_title1">Word Quest</h1>
+                <h3 class="subtitle3">Game made in kotlin.</h3>
+                <button class="btn2" onclick="window.open(`https://github.com/svantip/WordQuestTrgPlayKotlin`, '_blank')">Check it out</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex_row6">
+            <div
+              class="content_box9"
+              style="--src: url(../assets/programmer_working_late_night.png)"
+              data-aos="fade-left"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1000"
+            >
+              <div class="flex_col17">
+                <h1 class="big_title1">Time Tailor</h1>
+                <h3 class="subtitle3">Day organiser web app made using django framework.</h3>
+                <button class="btn1" onclick="window.open(`https://github.com/svantip/TimeTailor`, '_blank')">Check it out</button>
+              </div>
+            </div>
+            <div
+              class="content_box9"
+              style="--src: url(../assets/modern_office_setup.png)"
+              data-aos="fade-down"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1000"
+            >
+              <div class="flex_col18">
+                <h1 class="big_title1">Pong</h1>
+                <h3 class="subtitle3">Classic pong game made in kotlin.</h3>
+                <button class="btn1" onclick="window.open(`https://github.com/svantip/Pong`, '_blank')">Check it out</button>
+              </div>
+            </div>
+            <div
+              class="content_box12"
+              style="--src: url(../assets/collaborative_coding_session.png)"
+              data-aos="fade-right"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1000"
+            >
+              <div class="flex_col17">
+                <h1 class="big_title1">React chat app</h1>
+                <h3 class="subtitle11">Chat app made using react framework.</h3>
+                <button class="btn1" onclick="window.open(`https://github.com/svantip/`, '_blank')">Check it out</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section4" id="contact">
+        <div class="flex_row7">
+          <div class="flex_col19">
+            <h1 class="hero_title" id="anchor" data-aos="zoom-in-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
+              Let’s make something great together
+            </h1>
+            <form action="insert_contact.php" method="POST">
+              <input
+                id="name"
+                name="name"
+                class="rect1"
+                placeholder="Name"
+                data-aos="zoom-in-right"
+                data-aos-easing="ease-in-out"
+                data-aos-anchor="#anchor"
+                data-aos-duration="1000"
+                required
+              />
+              <input
+                id="email"
+                name="email"
+                class="rect2"
+                placeholder="E-mail"
+                data-aos="zoom-in-right"
+                data-aos-easing="ease-in-out"
+                data-aos-anchor="#anchor"
+                data-aos-duration="1000"
+                required
+              />
+              <textarea
+                id="message"
+                name="message"
+                class="rect3"
+                placeholder="Message"
+                data-aos="zoom-in-right"
+                data-aos-easing="ease-in-out"
+                data-aos-anchor="#anchor"
+                data-aos-duration="1000"
+                required
+              ></textarea>
+              <button
+                class="btn3"
+                type="submit"
+                data-aos="zoom-in-right"
+                data-aos-easing="ease-in-out"
+                data-aos-anchor="#anchor"
+                data-aos-duration="1000"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+          <img
+            class="image"
+            src="./assets/website_maintenance_illustration.png"
+            alt="alt text"
+            data-aos="zoom-in-right"
+            data-aos-easing="zoom-in-left"
+            data-aos-anchor="#anchor"
+            data-aos-duration="1500"
+          />
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript">
+      AOS.init();
+      new Sticky(".sticky-effect");
+    </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      function downloadFile() {
+        var fileUrl = "assets/SvanTipuricCV.pdf";
+        window.open(fileUrl, "_blank");
+      }
+
+      function sendEmail() {
+        emailjs.init("r6RUMKVQb4chXO8Fz");
+
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        var templateParams = {
+          from_name: name,
+          from_email: email,
+          message: message,
+        };
+
+        emailjs.send("default_service", "template_uni806l", templateParams).then(
+          function (response) {
+            console.log("SUCCESS!", response.status, response.text);
+            alert("Your message has been successfully sent. I will be in touch with you shortly.");
+          },
+          function (error) {
+            console.log("FAILED...", error);
+            alert("Oops! Something went wrong and we couldn't send your message.");
+          }
+        );
+
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+      }
+
+      function search() {
+        var toFind = document.getElementById("search").value;
+        document.getElementById("search").value = "";
+        var content = document.body.innerHTML;
+        var index = content.indexOf(toFind);
+
+        if (toFind && index !== -1) {
+          var regex = new RegExp(toFind, "i");
+          content = content.replace(regex, "<span id='highlight'>" + toFind + "</span>");
+          document.body.innerHTML = content;
+
+          var highlightedElement = document.getElementById("highlight");
+          highlightedElement.scrollIntoView({ behavior: "smooth", block: "center" });
+
+          setTimeout(function () {
+            highlightedElement.outerHTML = highlightedElement.innerHTML;
+          }, 1000);
+        } else {
+          alert("No match found.");
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          disable: "mobile",
+          startEvent: "DOMContentLoaded",
+          initClassName: "aos-init",
+          animatedClassName: "aos-animate",
+          useClassNames: false,
+          disableMutationObserver: false,
+          debounceDelay: 50,
+          throttleDelay: 99,
+          offset: 0,
+          delay: 0,
+          duration: 700,
+          easing: "ease",
+          once: false,
+          mirror: false,
+          anchorPlacement: "top-bottom",
+        });
+      });
+    </script>
+  </body>
+</html>

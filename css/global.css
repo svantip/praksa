@@ -1,0 +1,100 @@
+:root {
+  color-scheme: only light;
+}
+
+a {
+  color: #f7f9f9;
+}
+
+a:hover {
+  transform: scale(1.1);
+  animation: ColorChange 1.2s linear alternate infinite;
+}
+
+button:hover {
+  transform: scale(1.1) !important;
+}
+
+#btnFacebook:hover {
+  transform: scale(1.1);
+}
+
+#btnGithub:hover {
+  transform: scale(1.1);
+}
+
+#btnWhatsapp:hover {
+  transform: scale(1.1);
+}
+
+#btnInstagram:hover {
+  transform: scale(1.1);
+}
+
+#btnMail:hover {
+  transform: scale(1.1);
+}
+
+.image3:hover {
+  cursor: pointer;
+  animation: Zoom 1.2s linear alternate-reverse;
+}
+
+/* Animations */
+
+.fade_in {
+  animation: FadeIn 1.2s linear;
+}
+
+.fade_in_right {
+  animation: FadeInRight 1.2s linear;
+}
+
+.fade_in_up {
+  animation: FadeInUp 1.2s linear;
+}
+
+@keyframes FadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes FadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes FadeIn {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@keyframes Zoom {
+  to {
+    scale: 1.1;
+  }
+}
+
+@keyframes ColorChange {
+  to {
+    color: #b85f60;
+  }
+}
